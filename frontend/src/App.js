@@ -1,13 +1,21 @@
 import "./App.css";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Search from "./components/Search/Search";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App__header">Klickrent</header>
-      <div className="App__content">
-        <button className="button">Start inquiry</button>
+    <Router>
+      <div className="App">
+        <header className="App__header">Klickrent</header>
       </div>
-    </div>
+
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/search" component={Search} />
+      </Switch>
+    </Router>
   );
 }
 

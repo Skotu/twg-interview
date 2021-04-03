@@ -3,39 +3,33 @@
 }
 
 .App__header {
-  background-color: #282c34;
-  /* max-height: 100vh; */
+  background-color: #593a2e;
+  height: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f2f2f2;
   padding: 1rem;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45);
 }
 
 .App__link {
   color: #61dafb;
 }
 
-.App__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 3rem);
-}
-
-.App__call-to-action-button {
-  padding: 0.5rem 1rem;
+.App_content {
+  height: calc(100vh - 4.5rem);
 }
 
 .button {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
-  background-color: #ededed;
+  background-color: #f24c27;
   border-radius: 6px;
   border: 1px solid #dcdcdc;
   display: inline-block;
@@ -47,9 +41,9 @@
   padding: 0.5rem 1rem;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.45);
 }
 .button:hover {
   background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);

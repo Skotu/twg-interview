@@ -9,19 +9,18 @@
   top: 0;
   left: 0;
   background: #eee;
-  width: 100vw;
-  height: 100vh;
-}
-
-.SearchModal__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem;
+  width: calc(100vw);
+  height: calc(100vh);
+  overflow: hidden;
 }
 
 .SearchModal__header {
+  position: sticky;
+  width: calc(100vw - 2rem);
+  padding: 1rem;
+}
+
+.SearchModal__header-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -31,20 +30,34 @@
 .SearchModal__close-btn::after {
   cursor: pointer;
   display: inline-block;
-  content: "\00d7"; /* This will render the 'X' */
+  content: "\00d7";
   line-height: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.SearchModal__form {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
 .SearchModal__input {
   height: 1rem;
   padding: 0.5rem 0.25rem;
-  width: 100%;
+  width: calc(100% - 1rem);
+}
+
+.SearchResults {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 122px - 2rem);
+  overflow: auto;
+}
+
+.SearchResult__item {
+  padding: 0.35rem 1rem;
+}
+
+.SearchResult__item-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.SearchResult__item:nth-child(odd) {
+  background: #ccc;
 }

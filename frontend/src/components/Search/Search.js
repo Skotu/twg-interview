@@ -22,6 +22,8 @@ const Search = () => {
   useEffect(() => {
     if (inputValue !== "") {
       getData(inputValue)
+    } else {
+      setResults()
     }
   }, [getData, inputValue]);
 

@@ -4,12 +4,10 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const { query } = req.query;
-
     const filteredData = data
       .map((category) => {
         const filteredProducts = category.products.filter(product =>
-          product.name.toLowerCase().includes(query.toLowerCase())
+          product.name.toLowerCase().includes(req.query.query.toLowerCase())
         );
 
         if (filteredProducts.length === 0) {

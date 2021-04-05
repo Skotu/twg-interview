@@ -12,7 +12,7 @@ const Search = () => {
   const [inputValue, setInputValue] = useState("");
 
   const getData = useCallback(debounce(query => {
-    Axios.get("/data", {
+    Axios.get("/api/products", {
       params: {
         query
       }

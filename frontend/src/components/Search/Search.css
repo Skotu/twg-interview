@@ -1,10 +1,4 @@
 .Search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.SearchModal {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,20 +8,20 @@
   overflow: hidden;
 }
 
-.SearchModal__header {
+.SearchHeader {
   position: sticky;
   width: calc(100vw - 2rem);
   padding: 1rem;
 }
 
-.SearchModal__header-title {
+.SearchHeader-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.SearchModal__close-btn::after {
+.SearchHeader__close-btn::after {
   cursor: pointer;
   display: inline-block;
   content: "\00d7";

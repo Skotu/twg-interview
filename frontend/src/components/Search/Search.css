@@ -39,7 +39,7 @@
 .SearchResults {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 122px - 2rem);
+  height: calc(100vh - 106px);
   overflow: auto;
 }
 

@@ -3,6 +3,16 @@ import "./Search.css";
 const SearchResults = ({ data }) => {
   if (!data) return null;
 
+  if (data.length === 0) {
+    return (
+      <div
+        className="SearchResult__no-results"
+      >
+        No results
+      </div>
+    )
+  }
+
   const items = data.map((category) => {
     const { familyId, groupId, name, products } = category;
 
@@ -30,7 +40,7 @@ const SearchResults = ({ data }) => {
     );
   });
 
-  return <div className="SearchResults">{items}</div>;
+  return <div className="SearchResults" data-testid="searchresult">{items}</div>;
 };
 
 export default SearchResults;

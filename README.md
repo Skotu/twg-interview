@@ -1,6 +1,6 @@
-# Assignment
+# How to run the app
 
-You have two options to run the app.
-
-1. Run `npm start` in two separate terminals from backend and frontend directories.
-2. Run `npm run dev` from the frontend directory only.
+* First, run `npm install` in both frontend and backend directories
+* Then run one of the following
+   1. `npm start` in two separate terminals from backend and frontend directories.
+   2. `npm run dev` from the frontend directory only.

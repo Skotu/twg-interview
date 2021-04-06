@@ -12,6 +12,8 @@
   position: sticky;
   width: calc(100vw - 2rem);
   padding: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .SearchHeader-title {
@@ -45,10 +47,11 @@
 
 .SearchResult__item {
   padding: 0.35rem 1rem;
+  font-weight: 300;
 }
 
 .SearchResult__item-title {
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 0.25rem;
 }
 

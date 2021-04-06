@@ -9,12 +9,12 @@ function App() {
     <Router>
       <div className="App">
         <header className="App__header">Klickrent</header>
-      </div>
 
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <Route path="/search" component={Search} />
-      </Switch>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/search" component={Search} />
+        </Switch>
+      </div>
     </Router>
   );
 }

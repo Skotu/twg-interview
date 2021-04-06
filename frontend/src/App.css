@@ -3,10 +3,6 @@ body {
   font-weight: 400;
 }
 
-.App {
-  text-align: center;
-}
-
 .App__header {
   background-color: #593a2e;
   height: 2.5rem;

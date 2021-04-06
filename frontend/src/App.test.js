@@ -1,8 +1,20 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+describe('App', () => {
+  test('logo text is on the screen', () => {
+    render(<App />)
+
+    const textElement = screen.getByText('Klickrent');
+    expect(textElement).toBeInTheDocument();
+  })
+
+  test('logo text has correct class', () => {
+    render(<App />)
+
+    const textElement = screen.getByText('Klickrent');
+    expect(textElement).toHaveClass('App__header');
+  })
 });
+

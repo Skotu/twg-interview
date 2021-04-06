@@ -21,6 +21,7 @@ const SearchResults = ({ data }) => {
 
       return (
         <div
+          data-testid="searchresult-product"
           className="SearchResult__item-product"
           key={`typeId_${typeId}_groupId_${groupId}`}
         >
@@ -31,6 +32,7 @@ const SearchResults = ({ data }) => {
 
     return (
       <div
+        data-testid="searchresult-category"
         className="SearchResult__item"
         key={`group_${groupId}_family_${familyId}`}
       >
